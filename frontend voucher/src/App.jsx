@@ -1,9 +1,10 @@
 import React from 'react'
+import Login from './Pages/Login'
 
 function App() {
   return (
     <div>
-      Voucher management system
+      <Login/>
     </div>
   )
 }
