@@ -4,7 +4,7 @@ import Displaynumbers from './Displaynumbers'
 function Dashboardstats() {
   return (
     <div>
-        <Displaynumbers/>
+        <Displaynumbers />
     </div>
   )
 }

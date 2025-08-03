@@ -16,27 +16,27 @@ const StatBox = ({ title, value, icon, color }) => {
   );
 };
 
-// const DisplayNumbers = () => {
-//   const stats = [
-//     { title: 'Total Vouchers', value: '1,024', icon: FiFileText, color: 'bg-blue-50 text-blue-600' },
-//     { title: 'Uploads Today', value: '24', icon: FiUpload, color: 'bg-green-50 text-green-600' },
-//     { title: 'Pending Review', value: '12', icon: FiClock, color: 'bg-yellow-50 text-yellow-600' },
-//     { title: 'Mobile Sessions', value: '8', icon: FiSmartphone, color: 'bg-purple-50 text-purple-600' },
-//   ];
+const DisplayNumbers = () => {
+  const stats = [
+    { title: 'Total Vouchers', value: '1,024', icon: FiFileText, color: 'bg-blue-50 text-blue-600' },
+    { title: 'Uploads Today', value: '24', icon: FiUpload, color: 'bg-green-50 text-green-600' },
+    { title: 'Pending Review', value: '12', icon: FiClock, color: 'bg-yellow-50 text-yellow-600' },
+    { title: 'Mobile Sessions', value: '8', icon: FiSmartphone, color: 'bg-purple-50 text-purple-600' },
+  ];
 
-//   return (
-//     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-//       {stats.map((stat, index) => (
-//         <StatBox
-//           key={index}
-//           title={stat.title}
-//           value={stat.value}
-//           icon={stat.icon}
-//           color={stat.color}
-//         />
-//       ))}
-//     </div>
-//   );
-// };
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+      {stats.map((stat, index) => (
+        <StatBox
+          key={index}
+          title={stat.title}
+          value={stat.value}
+          icon={stat.icon}
+          color={stat.color}
+        />
+      ))}
+    </div>
+  );
+};
 
-// export default DisplayNumbers;
+export default DisplayNumbers;
