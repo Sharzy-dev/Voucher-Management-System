@@ -1,14 +1,14 @@
 import React from 'react'
 import Login from './Pages/Login'
-import Dashboard from './Pages/Userdashboard'
+import Userdashboard from './Pages/Userdashboard'
 import Navbar from './Components/Navbar'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 function App() {
   return (
     <div>
-      {/* <Login/> */}
-      {/* <Dashboard/> */}
-      <Navbar/>
+  
+      <Userdashboard/>
     </div>
   )
 }
