@@ -1,10 +1,6 @@
 import React from 'react'
 import Displaynumbers from './Displaynumbers'
 
-// Dashboardstats.jsx
-import React from 'react';
-import DisplayNumbers from './Displaynumbers'; 
-
 const Dashboardstats = () => {
   return (
     <div className="p-6">
