@@ -1,32 +1,6 @@
-// import React from 'react'
-
-// function Uploadherebox() {
-//   return (
-//      <div  >
-//         {/* a reusable box component for uploadhere.jsx */}
-//         <input type="file" className='flex flex-col mt-[107px] ml-[279px] rounded-lg border-gray-400 w-[466px] h-[362px] border border-dashed p-10 gap-10'/>
-//     </div>
-//   )
-// }
-
-// width: 466;
-// height: 362;
-// border-radius: 8px;
-// gap: 40px;
-// angle: 0 deg;
-// opacity: 1;
-// padding: 40px;
-// border-width: 1px;
-// border-style: dashed;
-// dashes: 8, 8;
-
-
-// export default Uploadherebox
-
 import React, { useState } from 'react';
 
-// function Uploadherebox (){}
-function Uploadherebox () {
+const ImageUploader = () => {
   const [image, setImage] = useState(null);
   const [error, setError] = useState('');
 
@@ -57,13 +31,8 @@ function Uploadherebox () {
   };
 
   return (
-    <div  className="
-    
-    rotate-0 opacity-[1]
-    flex flex-col mt-[107px] ml-[279px] rounded-lg border-gray-400 w-[466px] h-[362px] border border-dashed p-10 gap-10'
-    
-    ">
-      {/* <h2 className="text-xl font-semibold mb-4">Upload Your Photo</h2> */}
+    <div className="max-w-md mx-auto mt-10 p-6 border border-gray-300 rounded-lg shadow-md bg-white">
+      <h2 className="text-xl font-semibold mb-4">Upload Your Photo</h2>
       
       <input
         type="file"
@@ -87,5 +56,3 @@ function Uploadherebox () {
     </div>
   );
 };
-
-export default Uploadherebox
