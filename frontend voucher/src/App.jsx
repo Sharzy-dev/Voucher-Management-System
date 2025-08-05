@@ -1,13 +1,26 @@
 import React from 'react'
 import Login from './Pages/Login'
-import Uploadhere from './Components/Uploadhere'
-import Uploadherebox from './Components/Uploadherebox'
+import Userdashboard from './Pages/Userdashboard'
+import Navbar from './Components/Navbar'
+import QuickActions from './Components/Quickactionscomponents'
+import { BrowserRouter, Router, Route } from 'react-router-dom'
+import Quickactionscomponents from './Components/Quickactionscomponents'
+
 function App() {
   return (
-    <div >
-       <Login/>
-       {/* <Uploadhere/>  */}
-      {/* <Uploadherebox/> */}
+    <div>
+  {/* <BrowserRouter>
+  <Router>
+    <Route path='/Userdashboard' element={<Userdashboard/>}/>
+    <Route path="/upload" element={<UploadVoucher />} />
+    <Route path="/scanner" element={<MobileScanner />} />
+  </Router>
+  </BrowserRouter> */}
+  <Login/>
+  <Userdashboard/>
+  {/* <Quickactionscomponents/> */}
+  
+      
     </div>
   )
 }
