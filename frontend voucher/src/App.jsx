@@ -23,10 +23,11 @@ function App() {
   <Voucherinformation/>
   <Voucherrecords/>
   {/* <Quickactionscomponents/> */}
-  
+  {/* <Uploadherebox/> */}
+  {/* <Uploadhere/> */}
       
     </div>
   )
 }
 
-export default App 
+export default App

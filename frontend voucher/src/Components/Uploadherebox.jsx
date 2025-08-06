@@ -1,31 +1,5 @@
-// import React from 'react'
-
-// function Uploadherebox() {
-//   return (
-//      <div  >
-//         {/* a reusable box component for uploadhere.jsx */}
-//         <input type="file" className='flex flex-col mt-[107px] ml-[279px] rounded-lg border-gray-400 w-[466px] h-[362px] border border-dashed p-10 gap-10'/>
-//     </div>
-//   )
-// }
-
-// width: 466;
-// height: 362;
-// border-radius: 8px;
-// gap: 40px;
-// angle: 0 deg;
-// opacity: 1;
-// padding: 40px;
-// border-width: 1px;
-// border-style: dashed;
-// dashes: 8, 8;
-
-
-// export default Uploadherebox
-
 import React, { useState } from 'react';
-
-// function Uploadherebox (){}
+import { FaCloudUploadAlt } from 'react-icons/fa'
 function Uploadherebox () {
   const [image, setImage] = useState(null);
   const [error, setError] = useState('');
@@ -57,35 +31,39 @@ function Uploadherebox () {
   };
 
   return (
-    <div  className="
-    
-    rotate-0 opacity-[1]
-    flex flex-col mt-[107px] ml-[279px] rounded-lg border-gray-400 w-[466px] h-[362px] border border-dashed p-10 gap-10'
-    
-    ">
-      {/* <h2 className="text-xl font-semibold mb-4">Upload Your Photo</h2> */}
-      
-      <input
+    <div  className=" justify-center items-center 
+    flex flex-col mt-[17px]  rounded-lg border-[#008080] w-[466px] h-[362px] border-2 border-dashed p-10 ">
+     <FaCloudUploadAlt className="text-teal-600 w-15 h-15" />
+     <input
         type="file"
         accept="image/*"
         onChange={handleImageChange}
-        className="mb-4 block w-full text-sm text-gray-600"
+        className="mb-4 block  w-full text-sm text-gray-600  "
       />
 
       {error && <p className="text-red-500 text-sm mb-2">{error}</p>}
 
       {image && (
-        <div className="mt-4">
-          <p className="mb-2 text-sm text-gray-500">Preview:</p>
+        <div className="">
+          <p className=" text-sm text-gray-500">Preview:</p>
+             
           <img
             src={image}
-            alt="Uploaded Preview"
-            className="w-full max-h-64 object-contain rounded-md border"
-          />
-        </div>
-      )}
-    </div>
-  );
-};
+            alt="Uploaded Preview" 
+            className="w-full max-h-44 object-contain rounded-md border "/>
+           
+             </div>
+                )}
+                <div> 
+                  {/* <img src={arrow} alt='logo'className="text-teal-600 text-2xl mb-2"/> */}
+            <h2 className=' flex flex-col w-95.5  h-16.5 font-sans font-[400px] text-2xl 
+            justify-center items-center text-[#008080]'>Drag and drop files here or click <br/>
+              browse</h2>
+              <p className=' flex flex-col font-light text-2xl justify-center items-center  text-[#008080]'>Max file size 10MB</p>
+             </div>
+
+            </div>
+          );
+          };
 
 export default Uploadherebox
