@@ -5,6 +5,8 @@ import Navbar from './Components/Navbar'
 import QuickActions from './Components/Quickactionscomponents'
 import { BrowserRouter, Router, Route } from 'react-router-dom'
 import Quickactionscomponents from './Components/Quickactionscomponents'
+import Uploadherebox from './Components/Uploadherebox'
+import Uploadhere from './Components/Uploadhere'
 
 function App() {
   return (
@@ -16,13 +18,14 @@ function App() {
     <Route path="/scanner" element={<MobileScanner />} />
   </Router>
   </BrowserRouter> */}
-  <Login/>
-  <Userdashboard/>
+  {/* <Login/> */}
+    {/* <Userdashboard/>    */}
   {/* <Quickactionscomponents/> */}
-  
+  {/* <Uploadherebox/> */}
+  {/* <Uploadhere/> */}
       
     </div>
   )
 }
 
-export default App 
+export default App
