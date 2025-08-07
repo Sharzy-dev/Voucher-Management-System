@@ -10,7 +10,8 @@ import Voucherrecords from './Components/Voucherrecords'
 
 function App() {
   return (
-    <div>
+    <div  className="min-h-screen flex flex-col bg-gray-100" >
+    
   {/* <BrowserRouter>
   <Router>
     <Route path='/Userdashboard' element={<Userdashboard/>}/>
@@ -25,7 +26,7 @@ function App() {
   {/* <Quickactionscomponents/> */}
   {/* <Uploadherebox/> */}
   {/* <Uploadhere/> */}
-      
+       <Recentactivities/>
     </div>
   )
 }
