@@ -7,10 +7,12 @@ import { BrowserRouter, Router, Route } from 'react-router-dom'
 import Quickactionscomponents from './Components/Quickactionscomponents'
 import Uploadherebox from './Components/Uploadherebox'
 import Uploadhere from './Components/Uploadhere'
+import Recentactivities from './Components/Recentactivities'
 
 function App() {
   return (
-    <div>
+    <div  className="min-h-screen flex flex-col bg-gray-100" >
+    
   {/* <BrowserRouter>
   <Router>
     <Route path='/Userdashboard' element={<Userdashboard/>}/>
@@ -18,12 +20,12 @@ function App() {
     <Route path="/scanner" element={<MobileScanner />} />
   </Router>
   </BrowserRouter> */}
-  {/* <Login/> */}
-    {/* <Userdashboard/>    */}
+  {/* <Login/>
+    <Userdashboard/>    */}
   {/* <Quickactionscomponents/> */}
   {/* <Uploadherebox/> */}
   {/* <Uploadhere/> */}
-      
+       <Recentactivities/>
     </div>
   )
 }
