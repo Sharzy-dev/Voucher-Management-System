@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
 
-function Voucherinputfields() {
+const VoucherInputFields = ({ label, value }) => {
   return (
-    <div>
-        A reusable voucher input field for voucherinformation.jsx
+    <div className="mb-3">
+      <p className="text-gray-500 text-sm">{label}</p>
+      <p className="font-medium text-gray-800">{value}</p>
     </div>
-  )
-}
+  );
+};
 
-export default Voucherinputfields
+export default VoucherInputFields;

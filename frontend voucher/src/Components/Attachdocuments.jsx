@@ -1,5 +1,5 @@
 import React from 'react'
-import Attachdocumentbox from './Attachdocumentbox';
+import Attachdocumentbox from "./src/Components/Attachdocumentbox";
 
 const UploadSection = () => {
   return (
