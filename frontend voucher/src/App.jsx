@@ -2,21 +2,21 @@ import React from 'react'
 import Login from './Pages/Login'
 import Userdashboard from './Pages/Userdashboard'
 import Navbar from './Components/Navbar'
-import QuickActions from './Components/Quickactionscomponents'
-import { BrowserRouter, Router, Route } from 'react-router-dom'
+import Settings from './Pages/Settings'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
 
 function App() {
   return (
     <div>
-  {/* <BrowserRouter>
-  <Router>
-    <Route path='/Userdashboard' element={<Userdashboard/>}/>
-    <Route path="/upload" element={<UploadVoucher />} />
-    <Route path="/scanner" element={<MobileScanner />} />
-  </Router>
-  </BrowserRouter> */}
+  <BrowserRouter>
+  <Routes>
+    <Route path="/" element={<Login/>} />
+    <Route path="/Userdashboard" element={<Userdashboard/>}/>    
+    <Route path="/scanner" element={<Settings/>} />
+  </Routes>
+  </BrowserRouter>
 
-  <Userdashboard/>
+  {/* <Userdashboard/> */}
   
       
     </div>
