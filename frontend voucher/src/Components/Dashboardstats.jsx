@@ -1,20 +1,48 @@
-import React from 'react'
-import Displaynumbers from './Displaynumbers'
+import React from "react";
+import DisplayNumbers from "./src/Components/DisplayNumbers.jsx";
+import { FaClipboardList, FaUpload, FaClock, FaMobileAlt } from "react-icons/fa";
 
-const Dashboardstats = () => {
+const DashboardStats = () => {
+  const stats = [
+    {
+      title: "Total Vouchers",
+      number: "2,847",
+      iconBg: "bg-green-200 text-green-800",
+      icon: <FaClipboardList />,
+    },
+    {
+      title: "Uploads Today",
+      number: "16",
+      iconBg: "bg-orange-200 text-orange-800",
+      icon: <FaUpload />,
+    },
+    {
+      title: "Pending Review",
+      number: "4",
+      iconBg: "bg-yellow-200 text-yellow-800",
+      icon: <FaClock />,
+    },
+    {
+      title: "Mobile Sessions",
+      number: "8",
+      iconBg: "bg-blue-200 text-blue-800",
+      icon: <FaMobileAlt />,
+    },
+  ];
+
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-bold mb-6">Dashboard Overview</h2>
-      
-      {/* Implement DisplayNumbers component */}
-      <DisplayNumbers />
-      
-      {/* Other dashboard content can go here */}
-      <div className="mt-8">
-        {/* Your additional components */}
-      </div>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      {stats.map((stat, index) => (
+        <DisplayNumbers
+          key={index}
+          title={stat.title}
+          number={stat.number}
+          iconBg={stat.iconBg}
+          icon={stat.icon}
+        />
+      ))}
     </div>
   );
 };
 
-export default Dashboardstats;
+export default DashboardStats;
