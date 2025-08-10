@@ -1,5 +1,6 @@
 import React from 'react'
 import Login from './Pages/Login'
+<<<<<<< HEAD
 import Userdashboard from './Pages/Userdashboard'
 import Navbar from './Components/Navbar'
 import QuickActions from './Components/Quickactionscomponents'
@@ -25,6 +26,16 @@ function App() {
   {/* <Quickactionscomponents/> */}
   
       
+=======
+import AttachDocumentbox from './Components/Attachdocumentbox'
+import Dashboardstats from './Components/Dashboardstats'
+function App() {
+  return (
+    <div>
+      {/* <AttachDocumentbox/> */}
+      <Dashboardstats />
+      {/* <Login/> */}
+>>>>>>> 873a1333716603f3e29d8f4f01ab943a4e865d0d
     </div>
   )
 }
