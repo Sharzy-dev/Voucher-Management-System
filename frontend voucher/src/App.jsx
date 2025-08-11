@@ -20,12 +20,12 @@ function App() {
     <Route path="/scanner" element={<MobileScanner />} />
   </Router>
   </BrowserRouter> */}
-  {/* <Login/>
-    <Userdashboard/>    */}
+  <Login/>
+    <Userdashboard/>    
   {/* <Quickactionscomponents/> */}
   {/* <Uploadherebox/> */}
   {/* <Uploadhere/> */}
-       <Recentactivities/>
+       {/* <Recentactivities/> */}
     </div>
   )
 }
