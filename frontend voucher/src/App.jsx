@@ -9,24 +9,26 @@ import Uploadherebox from './Components/Uploadherebox'
 import Uploadhere from './Components/Uploadhere'
 import Recentactivities from './Components/Recentactivities'
 
+
 function App() {
   return (
-    <div  className="min-h-screen flex flex-col bg-gray-100" >
+    <div >
     
-  {/* <BrowserRouter>
-  <Router>
-    <Route path='/Userdashboard' element={<Userdashboard/>}/>
-    <Route path="/upload" element={<UploadVoucher />} />
-    <Route path="/scanner" element={<MobileScanner />} />
-  </Router>
-  </BrowserRouter> */}
-  <Login/>
-    <Userdashboard/>    
-  {/* <Quickactionscomponents/> */}
-  {/* <Uploadherebox/> */}
-  {/* <Uploadhere/> */}
-       {/* <Recentactivities/> */}
-    </div>
+  {/* //  <BrowserRouter>
+  // <Router>
+  //   <Route path='/Userdashboard' element={<Userdashboard/>}/>
+  //   <Route path="/upload" element={<UploadVoucher />} />
+  //   <Route path="/scanner" element={<MobileScanner />} />
+  // </Router>
+  // </BrowserRouter>  */}
+ {/* <Login/> */}
+     {/* <Userdashboard/>    */}
+  {/* <Quickactionscomponents/>  */}
+  {/* <Uploadherebox/> 
+   <Uploadhere/>
+      //  <Recentactivities/> */}
+    
+     </div>
   )
 }
 
