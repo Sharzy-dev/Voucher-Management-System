@@ -45,7 +45,7 @@ function Sidebar({ type = "user", activeItem }) {
     : [...commonMenu, ...userMenu];
 
   return (
-    <div className='min-h-screen bg-white shadow-md md:w-[239px] flex flex-col justify-between py-10'>
+    <div className='min-h-screen fixed bg-white shadow-md md:w-[239px] flex flex-col justify-between py-10'>
       {/* Top */}
       <div className='flex flex-col items-center gap-10'>
         <img src={Logo} alt="logo" className='w-[75px] h-[75px]' />
