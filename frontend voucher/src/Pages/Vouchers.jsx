@@ -7,7 +7,7 @@ function Vouchers() {
   return (
      <div className='flex w-screen '>
       <Sidebar type="user" />
-      <div className='flex flex-1 ml-[239px] flex-col px-10 '>
+      <div className='flex flex-1 flex-col px-10'>
       <Navbar title="Dashboard" fullName="Obong Nkanga" position="clerk"/>  
       
        <PaymentVoucher/>

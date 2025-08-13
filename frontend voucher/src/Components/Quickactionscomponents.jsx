@@ -5,7 +5,7 @@ import QuickActions from './Quickactions';
 
 function Quickactionscomponents() {
   return (
-    <div className="w-[316px] h-[440px] bg-white shadow p-4 space-y-4">
+    <div className="h-[28.06rem] bg-white shadow p-4 space-y-4">
       <h3 className="text-gray-800 font-semibold text-sm">Quick Actions</h3>
 
       <div className="space-y-4">

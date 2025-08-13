@@ -1,5 +1,6 @@
 import React from "react";
-import DisplayNumbers from "./src/Components/DisplayNumbers.jsx";
+import DisplayNumbers from "./Displaynumbers"
+
 import { FaClipboardList, FaUpload, FaClock, FaMobileAlt } from "react-icons/fa";
 
 const DashboardStats = () => {

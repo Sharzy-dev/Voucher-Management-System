@@ -1,22 +1,42 @@
-import React from 'react'
-import QuickActions from '../Components/Quickactionscomponents'
-import Sidebar from '../Components/Sidebar'
-import Navbar from '../Components/Navbar'
+import React from "react";
+import Sidebar from "../Components/Sidebar";
+import Navbar from "../Components/Navbar";
+// import Dashboardstats from '../Components/Dashboardstats';
+import Recentactivities from "../Components/Recentactivities";
+import QuickActions from "../Components/Quickactionscomponents";
+import Quickactionscomponents from "../Components/Quickactionscomponents";
+import DashboardStats from "../Components/Dashboardstats";
 
 function Userdashboard() {
   return (
-    <div className='flex w-screen '>
-      <Sidebar type="user" />
-      <div className='flex flex-1 flex-col px-10 '>
-      <Navbar title="Dashboard" fullName="Obong Nkanga" position="clerk"/>  
-      <p className='pl-10'>Welcome to your Smart Voucher Management system</p>
-      <div className='ml-auto pr-8 pt-10'>
-      <QuickActions />   
+    <div className="flex bg-gray-50 w-full min-h-screen">
+      <Sidebar />
+
+      <div className="flex-1 ml-[239px] px-6 py-2 space-y-6">
+        <div>
+        <Navbar 
+        title="Dashboard"
+        fullName=" Agu na ech mba"
+        position="staff"
+        />
+      <p className="text-gray-500 text-sm">Welcome to your Smart Voucher Management system</p>
       </div>
+
+      <div className="space-y-6">
+      
+        <DashboardStats/>
+
+        <div className="grid grid-cols-3 gap-4">
+          <div className="col-span-2">
+            <Recentactivities />
+          </div>
+          <Quickactionscomponents />
+        </div>
+        </div>
+
       </div>
-       
     </div>
-  )
+  );
 }
 
-export default Userdashboard
+export default Userdashboard;

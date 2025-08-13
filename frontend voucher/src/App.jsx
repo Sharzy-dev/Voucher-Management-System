@@ -28,7 +28,16 @@ function App() {
   {/* <Uploadhere/> */}
        <Recentactivities/>
     </div>
-  )
+  );
 }
 
 export default App
+
+
+{/* <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login/>} />
+          <Route path="/Userdashboard" element={<Userdashboard/>}/>
+          <Route path='/Navbar' element={<Navbar/>} />
+        </Routes>
+      </BrowserRouter> */}

@@ -44,29 +44,36 @@ const activities = [
 ];
 
   return (
-    <div className=" flex flex-col max-w-150.75 h-132.5 gap-10  mt-81.75 ml-69.75  p-5  bg-white rounded-lg shadow">
+    <div className=" flex flex-col max-w-150.75 h-auto gap-8 p-5  bg-white rounded-lg shadow">
       <h2 className="text-xl font-semibold ">Recent Activities</h2>
       <ul>
         {activities.map((activity) => (
           <li
             key={activity.id}
-            className="flex items-center space-x-4 mb-4  pb-2"
+            className="flex justify-between items-center 
+             space-x-4 mb-4  pb-2"
           >
-            <img
+            
+            <div className='flex gap-2 items-center'> 
+               <img
               src={activity.photo}
               alt={activity.name}
-              className="-w-10 h-10 rounded-full"
+              className="w-10 h-10 rounded-full"
             />
-            <div>
+            
+             <div className='flex flex-col'>
               <p className="font-medium">
                 {activity.name} <span className="text-gray-500 ">{activity.action}</span>
               </p>
+            
+                <p  className="text-gray-500 "> {activity.action}  </p>
+                </div>
+              </div>
+                    <span className="text-sm text-gray-500 font-[400]">
+                    {activity.time}
+                    </span>
 
-              <p  className="text-gray-500 "> {activity.action} <span className="text-sm text-gray-500 font-[400] ml-60 ">{activity.time}</span></p>
-
-
-              {/* <p className="text-sm text-[#333333] font-[400]  ml-100">{activity.time}</p> */}
-            </div>
+           
           </li>
         ))}
       </ul>
