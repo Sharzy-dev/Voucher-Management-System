@@ -10,7 +10,7 @@ import DashboardStats from "../Components/Dashboardstats";
 function Userdashboard() {
   return (
     <div className="flex bg-gray-50 w-full min-h-screen">
-      <Sidebar />
+      <Sidebar type="user"/>
 
       <div className="flex-1 ml-[239px] px-6 py-2 space-y-6">
         <div>

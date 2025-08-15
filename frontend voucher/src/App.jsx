@@ -5,28 +5,29 @@ import Navbar from './Components/Navbar'
 import QuickActions from './Components/Quickactionscomponents'
 import { BrowserRouter, Router, Route } from 'react-router-dom'
 import Quickactionscomponents from './Components/Quickactionscomponents'
+import Vouchers from './Pages/Vouchers'
+import DashboardStats from './Components/Dashboardstats'
+import Admindashboard from './Pages/Admindashboard'
+import Adminuploadvoucher from './Pages/Adminuploadvoucher'
+import Uploadherebox from './Components/Uploadherebox'
+import Uploadhere from './Components/Uploadhere'
 import Voucherinformation from './Components/Voucherinformation'
-import Voucherrecords from './Components/Voucherrecords'
+
+
 
 function App() {
   return (
-    <div  className="min-h-screen flex flex-col bg-gray-100" >
-    
-  {/* <BrowserRouter>
-  <Router>
-    <Route path='/Userdashboard' element={<Userdashboard/>}/>
-    <Route path="/upload" element={<UploadVoucher />} />
-    <Route path="/scanner" element={<MobileScanner />} />
-  </Router>
-  </BrowserRouter> */}
-  <Login/>
-  <Userdashboard/>
-  <Voucherinformation/>
-  <Voucherrecords/>
-  {/* <Quickactionscomponents/> */}
-  {/* <Uploadherebox/> */}
-  {/* <Uploadhere/> */}
-       <Recentactivities/>
+    <div className="flex ">
+      {/* <Userdashboard /> */}
+      {/* <Admindashboard/> */}
+      <Adminuploadvoucher/>
+      {/* <Voucherinformation/> */}
+      {/* <Uploadherebox/> */}
+      {/* <Uploadhere/> */}
+      {/* <DashboardStats/> */}
+      {/* <Vouchers/> */}
+      {/* <Quickactionscomponents/> */}
+
     </div>
   );
 }
