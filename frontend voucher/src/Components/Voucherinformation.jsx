@@ -31,7 +31,7 @@ function Voucherinformation() {
   };
 
   return (
-    <div className="w-[504px] rounded-[8px] p-[40px] bg-white shadow-md">
+    <div className="w-[504px] rounded-[8px] p-10 bg-white shadow-md">
       <form onSubmit={handleSubmit(onSubmit)}>
         <h1 className="text-xl font-semibold text-gray-900 mb-1">Voucher Information</h1>
         <h3 className="text-sm text-gray-600 mb-6">Enter the metadata for this voucher</h3>

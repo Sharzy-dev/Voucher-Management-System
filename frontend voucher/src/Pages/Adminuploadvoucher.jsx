@@ -1,9 +1,7 @@
+import React from 'react'
 import Sidebar from '../Components/Sidebar';
 import Navbar from '../Components/Navbar';
 import { MdInsertPageBreak } from 'react-icons/md';
-
-import React from 'react'
-import { BiUpload } from 'react-icons/bi';
 import Uploadherebox from '../Components/Uploadherebox';
 import QuickActions from '../Components/Quickactions';
 import Voucherinformation from '../Components/Voucherinformation';
@@ -20,15 +18,16 @@ function Adminuploadvoucher() {
             fullName=" Agu na ech mba"
             position="staff"
           />
-          <div className="flex justify-center items-start gap-8">
+          <div className="flex justify-even mt-2 items-start gap-8">
             <div>
-              <div className="my-8">
+              <div className="mb-10">
                 <Uploadherebox />
               </div>
 
               <QuickActions
                 icon={MdInsertPageBreak}
                 text="Mobile scanner"
+                title="Mobile scanner"
                 onClick={() => {
                   console.log("Mobile scanner clicked");
                 }}
