@@ -12,15 +12,18 @@ import Adminuploadvoucher from './Pages/Adminuploadvoucher'
 import Uploadherebox from './Components/Uploadherebox'
 import Uploadhere from './Components/Uploadhere'
 import Voucherinformation from './Components/Voucherinformation'
+import Register from './Pages/Register'
 
 
 
 function App() {
   return (
-    <div className="flex ">
+    <div className=" ">
       {/* <Userdashboard /> */}
+      <Register/>
+      {/* <Login/> */}
       {/* <Admindashboard/> */}
-      <Adminuploadvoucher/>
+      {/* <Adminuploadvoucher/> */}
       {/* <Voucherinformation/> */}
       {/* <Uploadherebox/> */}
       {/* <Uploadhere/> */}
