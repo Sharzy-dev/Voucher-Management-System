@@ -1,18 +1,11 @@
 import React from "react";
 import { Search } from "lucide-react"; // using lucide-react for icons
 
-const SearchFilterBar = ({ 
-  placeholder = "Search vouchers by number, department or description.", 
-  onSearch, 
-  filterOptions = [
-    "All Status", 
-    "Approved",
-    "Pending",
-    "Rejected",
-
-    
-  ], 
-  onFilterChange 
+const SearchFilterBar = ({
+  placeholder = "Search vouchers by number, department or description.",
+  onSearch,
+  filterOptions = ["All Status", "Approved", "Pending", "Rejected"],
+  onFilterChange,
 }) => {
   return (
     <div className="flex justify-between gap-3 items-center">

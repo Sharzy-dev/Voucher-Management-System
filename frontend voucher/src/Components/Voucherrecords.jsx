@@ -55,7 +55,7 @@ function Voucherrecords() {
   return (
     <div className="pt-5 pr-5 pb-[9.625rem] pl-5 w-[67.5625rem] rounded-md bg-white">
       <h2 className="text-lg font-semibold text-blue-800 mb-4">Voucher Records</h2>
-      <div className="overflow-x-auto rounded-md shadow-sm">
+      <div className="overflow-x-auto rounded-md">
         <table className="min-w-full table-auto border-collapse">
           <thead className="bg-white">
             <tr className="text-left text-sm text-gray-700">
