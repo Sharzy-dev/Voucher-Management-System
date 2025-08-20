@@ -132,7 +132,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
   };
 
   return (
-   <div className="bg-emerald-900 min-h-screen flex items-center justify-center px-4">
+   <div className=" bg-emerald-900 min-h-screen flex items-center justify-center px-4">
       <div className="bg-white w-full max-w-md p-8 rounded-lg  space-y-6">
         {/* Header */}
         <div className="text-center space-y-2">
