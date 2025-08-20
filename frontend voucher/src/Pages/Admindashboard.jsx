@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "../Components/Sidebar";
 import Navbar from "../Components/Navbar";
 // import Dashboardstats from '../Components/Dashboardstats';
+import { FaClipboardList, FaUpload, FaClock, FaMobileAlt } from "react-icons/fa";
 import Recentactivities from "../Components/Recentactivities";
 import QuickActions from "../Components/Quickactionscomponents";
 import Quickactionscomponents from "../Components/Quickactionscomponents";
@@ -28,12 +29,13 @@ function Admindashboard() {
           <div className="flex gap-10">
             <Dashboardstats
               title="Total Vouchers"
-              total="1"
-              img="Ellipse 2.svg"
+              number ="15"
+              iconBg = "bg-green-200 text-green-800"
+              icon={<FaClipboardList/>} 
             />
-            <Dashboardstats title="Total hers" total="2" img="Ellipse 2.svg" />
-            <Dashboardstats title=" Vouchers" total="3" img="Ellipse 2.svg" />
-            <Dashboardstats title="Toouchers" total="4" img="Ellipse 2.svg" />
+            <Dashboardstats title="Uploads Today" number="3" iconBg = "bg-orange-200 text-orange-800" icon= {<FaUpload />} />
+            <Dashboardstats title="Pending Review" number="4"  iconBg = "bg-yellow-200 text-yellow-800" icon={<FaClock/> } />
+            <Dashboardstats title="Mobile Sessions"number="2" iconBg = "bg-blue-200 text-blue-800" icon={<FaMobileAlt/>} />
           </div>
 
           <div className="grid grid-cols-3 gap-4">

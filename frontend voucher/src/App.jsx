@@ -24,14 +24,14 @@ function App() {
       {/* <Userdashboard /> */}
       {/* <Register/> */}
       {/* <Login/> */}
-      {/* <Admindashboard/> */}
+      <Admindashboard/>
       {/* <Adminuploadvoucher/> */}
       {/* <Voucherinformation/> */}
       {/* <Uploadherebox/> */}
       {/* <Uploadhere/> */}
       {/* <DashboardStats/> */}
       {/* <Vouchers/> */}
-      <UserVoucher/>
+      {/* <UserVoucher/> */}
       {/* <Voucherrecords/> */}
       {/* <Quickactionscomponents/> */}
 
