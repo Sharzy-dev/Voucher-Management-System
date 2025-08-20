@@ -13,6 +13,8 @@ import Uploadherebox from './Components/Uploadherebox'
 import Uploadhere from './Components/Uploadhere'
 import Voucherinformation from './Components/Voucherinformation'
 import Register from './Pages/Register'
+import Voucherrecords from './Components/Voucherrecords'
+import UserVoucher from './Pages/UserVoucher'
 
 
 
@@ -20,7 +22,7 @@ function App() {
   return (
     <div className=" ">
       {/* <Userdashboard /> */}
-      <Register/>
+      {/* <Register/> */}
       {/* <Login/> */}
       {/* <Admindashboard/> */}
       {/* <Adminuploadvoucher/> */}
@@ -29,6 +31,8 @@ function App() {
       {/* <Uploadhere/> */}
       {/* <DashboardStats/> */}
       {/* <Vouchers/> */}
+      <UserVoucher/>
+      {/* <Voucherrecords/> */}
       {/* <Quickactionscomponents/> */}
 
     </div>
